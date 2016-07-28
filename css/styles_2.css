@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+#top {
+    color:lightgray;
+    background-color: black;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background: url(../img/header.jpg) no-repeat top left;
+    background-size: cover;
+    padding-bottom: 200px;
+    padding-top: 150px;
+}
+
+#top p {
+    color: white;
+}
+
+.social {
+    font-size: 11px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    background: darkgray;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 9px;
+    border-radius: 25px;
+    width: 40px;   
+}
+
+#about {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: dimgray;
+}
+
+#about ul {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+  }
+
+  a:hover {
+    outline: none;
+    text-decoration:none;
+    color:#00cc99;
+  }
+
+  a:focus {
+    outline:none;
+    outline-offset: 0;
+  }
+
+  a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+
+#about p {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 300;
+    color: floralwhite;
+    font-size: 11px;
+}
+
+#about h2 {
+   font-size: 25px; 
+}
+
+#about h3 {
+    font-size: 18px;
+}
+
+#footer {
+    background-color: black;
+    color: floralwhite;
+    padding-bottom: 10px;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    color: floralwhite;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+
+
+#navigation {
+    font-family: 'Roboto', 'sans-serif';
+    color: floralwhite;
+    background-color: black;
+    padding-bottom: 5px;
+}
+
+#navigation h1 {
+    font-size: 25px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    text-align: justify;
+    font-weight: 100;
+    margin-top: 25px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    text-align: center;
+    padding: 35px;
+}
+
+#portfolio {
+/*    padding: 10px 10px;*/
+    padding-bottom: 25px;
+    padding-top: 30px;
+    background-color: #00cc99;
+}
+
+#portfolio h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#portfolio .portfolio-item {
+/*    right: 0;*/
+/*    margin: 0 0 15px;*/
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+#portfolio .portfolio-item .bottom {
+    margin-top: 25px;
+    /*Adjust the 25px to make the bottom are aligned with other images*/
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    border-radius: 76px;
+    margin-left: 1px;
+    opacity: 0;
+    font-size: 10px;
+    background: rgba(24, 188, 156, .9);
+    /*    adjust the color of roll over effect*/
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 40%;
+    /* adjust this if want to show the name of title*/
+    width: 100%;
+    height: 20px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 1px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h2 {
+    font-size: 18px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portolio .portfolio-item .porfolio-link .portfolio-icon {
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+    margin-left: 16px;
+    font-size: 30px;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+/*        margin: 0 0 30px;*/
+        margin-bottom: 20px;
+    }
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: white;
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #00cc99;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #00cc99;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+#contact {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: darkgrey;
+    background: url(../img/contact-bg.jpg) no-repeat top left;
+    background-size: cover;
+    
+}
+
+#contact h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contact h2, h3 {
+    text-align: center;
+    margin-top: 3px;
+}
+
+#contact .contact-text {
+    display: block;
+    padding-left: 20px;
+}
+
+#contact .contact-text-input {
+    margin-left: 30px;
+    width: 340px; 
+}
+
+#contact .contact-text-message {
+    margin-left: 30px;
+}
+
+#contact-button {
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 162px;
+    cursor: pointer;
+}
+
+#contact-button:hover {
+    color: #00cc99;
+}
+
+/*navigation*/
+
+/* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+    
+}
+
+/*Change the font size of your name on the navigation bar*/
+.navbar .navbar-brand {
+    font-size: 2em;
+    color:floralwhite!important;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #00cc99 !important;
+}
+
+/* The active link, when scroll to the section, the menu items will turn to different color */
+.navbar-nav li.active a {
+    color: aquamarine!important;
+    background-color:#55555a !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
