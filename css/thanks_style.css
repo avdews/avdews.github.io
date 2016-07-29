@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
+body { 
+    font-family: 'Roboto', 'sans-serif';
+    background-color: dimgrey;
+}
+
+body h1 {
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 100;
+	text-align: center;
+	color: floralwhite;
+}
+
+body p {
+	font-family: 'Roboto', 'sans-serif';
+	text-align: center;
+	color: floralwhite;
+}

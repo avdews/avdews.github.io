@@ -23,7 +23,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/contactform.js"></script>
 
 </head>
 
@@ -240,14 +239,15 @@
         <h1>Contact</h1>
         <div class="row">
             <div class="col-md-4 col-md-offset-4 contact-text">
-              <form id="contactform" method="POST">
+              <form action="https://formspree.io/avdews@umich.edu" method="POST">
                 <h3>Your Name:</h3>
                 <input type="text" class="contact-text-input" name="name" align="center" placeholder="First Last"><br>
                 <h3>Your E-Mail Address:</h3>
                 <input type="email" name="_replyto" class="contact-text-input" placeholder="you@example.com"><br>
                 <h3>Your Message:</h3>
                 <textarea name="message" class="contact-text-message" rows="8" cols="46" placeholder="Say something cool"></textarea>
-                <button type="submit" id="contact-button" onclick="sendMessage()">Submit</button>
+                <input type="submit" id="contact-button">
+                <input type="hidden" name="_next" value="https://avdews.github.io/thanks.html">
               </form>
             </div>
         </div>
