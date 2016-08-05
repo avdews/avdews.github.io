@@ -180,16 +180,13 @@ li a {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
-    position: absolute;
+    background: rgba(24, 188, 156, 0.9) none repeat scroll 0 0;
     border-radius: 76px;
-    margin-left: 1px;
-    opacity: 0;
     font-size: 10px;
-    background: rgba(24, 188, 156, .9);
-    /*    adjust the color of roll over effect*/
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    margin-left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease 0s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
